@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="ru" class='main'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/js_file.js"></script>
+        <link rel="SHORTCUT ICON" href="movies/805_original.ico" type="image/x-icon">
+        <title>
+            Тебелев Данил Николаевич
+        </title>
+	<header>
+            <h1>Добро пожаловать</h1>
+            <p>
+                <h2 class="money"> "За деньги - да!" </h2>
+            </p>
+        </header>
+    </head>
+
+    <body>
+	<div>
+			<div class="underrow">
+				<div class="about-new-user">
+					<?php
+						if(!isset($_COOKIE['User'])){
+					?>
+						<form action="/registration.php">
+                                                        <button class="registr">
+                                                                Зарегистрируйтесь
+                                                        </button>
+                                                </form> 
+                                                 или    
+                                                <form action="/login.php">
+                                                        <button class="registr">
+                                                                войдите
+                                                        </button>
+                                                </from> , чтобы просматривать контент!
+
+					<?php
+						}else{
+							$link = mysqli_connect('127.0.0.1', 'root', 'Ulebud10-', 'first');
+							$sql = "SELECT * FROM first";
+							$res = mysqli_query($link, $sql);
+							if (1 > 0) {
+								while (mysqli_fetch_array($res)){
+									echo '12415';
+								}
+							} else {
+								echo "Записей пока нет";
+							}
+						}
+                                	?>
+
+
+       				</div>
+			</div>
+	</div>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+p.text-ali {
+    text-align: justify;
+}
+
+
+.img_start + p {
+    width: 200px;
+    text-align: center;
+}
+
+.main {
+    background-image: url("../movies/background.png");
+    background-repeat: no-repeat;
+}
+h2.money {
+   color: red;
+   opacity: 0.1;
+}
+
+h2.start_info_h2 h3.start_info_h3{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.row_info {
+    position: absolute;
+    left: 70%;
+    font-style: italic;
+    bottom: 40%;
+}
+
+
+.row_start {
+    font-style: italic;
+}
+
+button.show {
+    background-color: #2670b9; 
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+}
+
+.show-picture{
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+button.show:hover {
+    background-color: #1a75ff; 
+}
+
+.invise { 
+    position: absolute;
+    top: 0px; 
+    right: 0px;
+    width: 150px;
+    height: auto;
+}
+
+input, textarea,  button.registr {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #300627;
+    border-radius: 5px;
+    font-size: 10x;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    color: white;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); 
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+button.registr {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    height: 100px;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+ textarea {
+    height: 150px; 
+    resize: vertical;
+}
+
+.create-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+}
+
